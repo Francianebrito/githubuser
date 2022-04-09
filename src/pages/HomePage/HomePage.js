@@ -3,19 +3,15 @@ import Logout from "../../assets/logout.png";
 import { BASE_URL } from "../../constants/urls";
 import {
   Header,
-  ContainerLogout,
+  ButtonLogout,
   ImageUser,
-  ContentPage,
+  DataUser,
   NameUser,
-  Email,
-  Address,
   ContainerBio,
   TitleBio,
-  Description,
   ContainerData,
   Container,
   Number,
-  Name,
   ContainerPage,
 } from "./styled";
 import Menu from "../../Components/Menu/Menu";
@@ -49,40 +45,39 @@ const HomePage = () => {
       <Header>
         <h1>#{states.dataUser.login}</h1>
 
-        <ContainerLogout onClick={logout}>
+        <ButtonLogout onClick={logout}>
           <h3>Logout</h3>
           <img src={Logout} alt="logout" />
-        </ContainerLogout>
+        </ButtonLogout>
       </Header>
       <ImageUser src={states.dataUser.avatar_url} alt="user" />
 
-      <ContentPage>
+      <DataUser>
         <NameUser>{states.dataUser.name}</NameUser>
-
-        <Email>{states.dataUser.email}</Email>
-        <Address>{states.dataUser.location}</Address>
-      </ContentPage>
+        <span>{states.dataUser.email}</span>
+        <span>{states.dataUser.location}</span>
+      </DataUser>
 
       <ContainerData>
         <Container>
           <Number>{states.dataUser.followers}</Number>
-          <Name>Followers</Name>
+          <span>Followers</span>
         </Container>
 
         <Container>
           <Number>{states.dataUser.following}</Number>
-          <Name>Following</Name>
+          <span>Following</span>
         </Container>
 
         <Container>
           <Number>{states.dataUser.public_repos}</Number>
-          <Name>Repositories</Name>
+          <span>Repositories</span>
         </Container>
       </ContainerData>
 
       <ContainerBio>
         <TitleBio>Bio</TitleBio>
-        <Description>{states.dataUser.bio}</Description>
+        <p>{states.dataUser.bio}</p>
       </ContainerBio>
 
       <Menu username={states.user} currentPage={"home"} />

@@ -22,21 +22,30 @@ export const Header = styled.header`
   }
 `;
 
-export const ContainerLogout = styled.div`
+export const ButtonLogout = styled.div`
   display: flex;
   align-items: center;
+  cursor: pointer;
+  gap: 5px;
+  h3 {
+    font-weight: 400;
+  }
   img {
     width: 32px;
-    padding: 12px 5px;
   }
 `;
 
-export const ContentPage = styled.div`
+export const DataUser = styled.div`
   background-color: #292929;
   padding: 108px 0px 48px 0px;
   color: #fff;
   max-height: 226px;
   margin-top: 10px;
+  span {
+    height: 22.5px;
+    display: block;
+    padding-left: 26px;
+  }
 `;
 
 export const ImageUser = styled.img`
@@ -63,41 +72,31 @@ export const NameUser = styled.h1`
   }
 `;
 
-export const Email = styled.span`
-  font-size: 18px;
-  line-height: 22.5px;
-  height: 22.5px;
-  display: block;
-  padding-left: 26px;
-`;
-
-export const Address = styled.span`
-  font-size: 18px;
-  line-height: 22.5px;
-  height: 22.5px;
-  padding-left: 26px;
-`;
-
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 12px 0px 16px;
+  span {
+    font: normal normal lighter 17px/24px Helvetica;
+  }
 `;
 
-export const Number = styled.span`
+export const Number = styled.h3`
   font: normal normal bold 40px/49px Helvetica;
-`;
-
-export const Name = styled.span`
-  font: normal normal lighter 17px/24px Helvetica;
+  margin: 0;
 `;
 
 export const ContainerBio = styled.div`
   background-color: #292929;
   color: #fff;
   padding: 38px 0px 146px;
+  p {
+    font: normal normal lighter 18px/24px Arial, sans-serif;
+    padding: 26px;
+    margin: 0;
+  }
 `;
 
 export const TitleBio = styled.h2`
@@ -115,24 +114,9 @@ export const TitleBio = styled.h2`
   }
 `;
 
-export const Description = styled.p`
-  font: normal normal lighter 18px/24px Arial, sans-serif;
-  padding: 26px;
-  margin: 0;
-`;
-
 export const ContainerData = styled.section`
   background-color: #525252;
   color: #fff;
   display: flex;
   justify-content: space-around;
 `;
-
-export const Circle = styled.div`
-  width: 10px;
-  height: 5.2vh;
-  border-radius: 0 100px 100px 0;
-  background-color: #ffce00;
-`;
-
-/* 133 */
