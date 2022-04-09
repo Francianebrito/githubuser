@@ -14,11 +14,6 @@ export const Image = styled.img`
   width: 98px;
 `;
 
-// export const ContainerInput = styled.div`
-/* max-width: 339px; */
-/* width: 339px; */
-// `;
-
 export const Input = styled.input`
   border: 1px solid gray;
   box-shadow: 0 3px 6px #111;
