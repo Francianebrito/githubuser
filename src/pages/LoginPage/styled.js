@@ -14,17 +14,15 @@ export const Image = styled.img`
   width: 98px;
 `;
 
-export const ContainerInput = styled.div`
-  max-width: 339px;
-  width: 339px;
-  background-color: #fff;
-  margin: 35px 0 6px;
-  box-shadow: 0 3px 6px #111;
-  border-radius: 12px;
-  border: 1px solid gray;
-`;
+// export const ContainerInput = styled.div`
+/* max-width: 339px; */
+/* width: 339px; */
+// `;
 
 export const Input = styled.input`
+  border: 1px solid gray;
+  box-shadow: 0 3px 6px #111;
+  margin: 35px 0 6px;
   outline: 0;
   font-size: 20px;
   line-height: 23px;
@@ -45,7 +43,7 @@ export const TextError = styled.span`
 export const Button = styled.button`
   width: 339px;
   border-radius: 12px;
-  box-shadow: 0px 3px 6px #111;
+  box-shadow: 0px 3px 6px #292929;
   outline: 0;
   height: 56px;
   background-color: #ffce00;
@@ -56,8 +54,7 @@ export const Button = styled.button`
   font: normal normal bold 18px/24px Roboto Slab;
   text-transform: uppercase;
   cursor: pointer;
-`;
-
-export const Text = styled.span`
-  padding: 0px 9px;
+  span {
+    padding: 0px 9px;
+  }
 `;
